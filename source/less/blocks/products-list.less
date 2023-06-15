@@ -1,7 +1,17 @@
 .products-list {
+  &__mixing{
+    @media (min-width: @mobile-width) {
+      display: flex;
+    }
+  }
   &__list {
     text-align: center;
     padding: 0;
+    @media (min-width: @tablet-width) {
+      text-align: center;
+      display: grid;
+      grid-template-columns: 384px 384px;
+    }
   }
   &__item{
     list-style-type: none;
@@ -32,6 +42,9 @@
     @media (min-width: @mobile-width) {
       display: flex;
       justify-content: space-around;
+      @media (min-width: @tablet-width) {
+        justify-content: flex-end;
+      }
      a {
         color: black;
         float: left;

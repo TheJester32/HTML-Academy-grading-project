@@ -5,10 +5,19 @@
     padding: 0;
   }
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+      margin-right: 100px;
+  }
+
   &__item {
     list-style-type: none;
     @media (min-width: @mobile-width) {
       padding-top: 15px;
+    }
+    @media (min-width: @tablet-width) {
+      padding-top: 20px;
+      margin-left: 30px;
     }
   }
 }
