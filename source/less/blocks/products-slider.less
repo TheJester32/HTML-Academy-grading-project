@@ -2,6 +2,18 @@
   background-color: #F3EBE1;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding-bottom: 220px;
+  }
+
+  &__new{
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+      padding-top: 50px;
+    }
+  }
+
   &__order-container{
     @media (min-width: @mobile-width) {
       align-items: center;
@@ -21,4 +33,14 @@
       margin-left: 45px;
     }
   }
+
+  &__preview{
+    @media (min-width: @tablet-width) {
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    top: 250px;
+    right: 208px;
+  }
+}
 }
