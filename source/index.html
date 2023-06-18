@@ -6,6 +6,10 @@
   <title>Drink Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
 </head>
 
 <body class="page__body">
@@ -21,15 +25,13 @@
       <symbol id="account" viewBox="0 0 60 60">
         <g>
           <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M32.6667 26C32.6667 27.4728 31.4728 28.6667 30 28.6667C28.5272 28.6667 27.3333 27.4728 27.3333 26C27.3333 24.5272 28.5272 23.3333 30 23.3333C31.4728 23.3333 32.6667 24.5272 32.6667 26ZM34 26C34 28.2091 32.2091 30 30 30C27.7909 30 26 28.2091 26 26C26 23.7909 27.7909 22 30 22C32.2091 22 34 23.7909 34 26ZM25.1967 34.3102C26.4361 33.2774 28.1613 32.6667 30 32.6667C31.8387 32.6667 33.5639 33.2774 34.8033 34.3102C36.0354 35.337 36.6667 36.6719 36.6667 38H38C38 36.2321 37.1573 34.5363 35.6569 33.286C34.1566 32.0357 32.1218 31.3333 30 31.3333C27.8782 31.3333 25.8434 32.0357 24.3431 33.286C22.8427 34.5363 22 36.2321 22 38L23.3333 38C23.3333 36.6719 23.9646 35.337 25.1967 34.3102Z"
-            fill="#333333" />
+            d="M32.6667 26C32.6667 27.4728 31.4728 28.6667 30 28.6667C28.5272 28.6667 27.3333 27.4728 27.3333 26C27.3333 24.5272 28.5272 23.3333 30 23.3333C31.4728 23.3333 32.6667 24.5272 32.6667 26ZM34 26C34 28.2091 32.2091 30 30 30C27.7909 30 26 28.2091 26 26C26 23.7909 27.7909 22 30 22C32.2091 22 34 23.7909 34 26ZM25.1967 34.3102C26.4361 33.2774 28.1613 32.6667 30 32.6667C31.8387 32.6667 33.5639 33.2774 34.8033 34.3102C36.0354 35.337 36.6667 36.6719 36.6667 38H38C38 36.2321 37.1573 34.5363 35.6569 33.286C34.1566 32.0357 32.1218 31.3333 30 31.3333C27.8782 31.3333 25.8434 32.0357 24.3431 33.286C22.8427 34.5363 22 36.2321 22 38L23.3333 38C23.3333 36.6719 23.9646 35.337 25.1967 34.3102Z"/>
         </g>
       </symbol>
       <symbol id="cart" viewBox="0 0 60 60">
         <g>
           <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M27.6609 25.8755L27.8935 28.6667H32.1065L32.3391 25.8755C32.4531 24.507 31.3732 23.3333 30 23.3333C28.6268 23.3333 27.5469 24.507 27.6609 25.8755ZM33.4444 28.6667L33.6678 25.9862C33.8466 23.8404 32.1533 22 30 22C27.8467 22 26.1534 23.8404 26.3322 25.9862L26.5556 28.6667H23.3469H22L22.1905 30L23.0063 35.7105C23.1939 37.0242 24.3191 38 25.6461 38H34.3539C35.6809 38 36.8061 37.0242 36.9937 35.7105L37.8095 30L38 28.6667H36.6531H33.4444ZM33.3333 30H33.2801L33.0579 32.6667H36.0817L36.4627 30H33.3333ZM31.9421 30H28.0579L28.2801 32.6667H31.7199L31.9421 30ZM26.7199 30H26.6667H23.5373L23.9183 32.6667H26.9421L26.7199 30ZM28.6134 36.6667L28.3912 34H31.6088L31.3866 36.6667H28.6134ZM32.9468 34L32.7245 36.6667H34.3539C35.0174 36.6667 35.58 36.1788 35.6738 35.5219L35.8912 34H32.9468ZM27.0532 34L27.2755 36.6667H25.6461C24.9826 36.6667 24.42 36.1788 24.3262 35.5219L24.1088 34H27.0532Z"
-            fill="#333333" />
+            d="M27.6609 25.8755L27.8935 28.6667H32.1065L32.3391 25.8755C32.4531 24.507 31.3732 23.3333 30 23.3333C28.6268 23.3333 27.5469 24.507 27.6609 25.8755ZM33.4444 28.6667L33.6678 25.9862C33.8466 23.8404 32.1533 22 30 22C27.8467 22 26.1534 23.8404 26.3322 25.9862L26.5556 28.6667H23.3469H22L22.1905 30L23.0063 35.7105C23.1939 37.0242 24.3191 38 25.6461 38H34.3539C35.6809 38 36.8061 37.0242 36.9937 35.7105L37.8095 30L38 28.6667H36.6531H33.4444ZM33.3333 30H33.2801L33.0579 32.6667H36.0817L36.4627 30H33.3333ZM31.9421 30H28.0579L28.2801 32.6667H31.7199L31.9421 30ZM26.7199 30H26.6667H23.5373L23.9183 32.6667H26.9421L26.7199 30ZM28.6134 36.6667L28.3912 34H31.6088L31.3866 36.6667H28.6134ZM32.9468 34L32.7245 36.6667H34.3539C35.0174 36.6667 35.58 36.1788 35.6738 35.5219L35.8912 34H32.9468ZM27.0532 34L27.2755 36.6667H25.6461C24.9826 36.6667 24.42 36.1788 24.3262 35.5219L24.1088 34H27.0532Z"/>
         </g>
       </symbol>
       <symbol id="toggle" viewBox="0 0 60 60">
@@ -120,20 +122,57 @@
       <svg class="header__item logo-short" width="92px" height="36px">
         <use href="#logo-short"></use>
       </svg>
+      <svg class="header__item logo-full" width="170px" height="36px">
+        <use href="#logo-full"></use>
+      </svg>
     </header>
     <main class="main">
-      <section class="products-slider">
-        <img class="products-slider__preview" src="img/flat_white_mobile.png" alt="Декаф Флэт Уайт" loading="lazy">
-        <p class="products-slider__new">Новинка!</p>
-        <h1 class="products-slider__product-name">Декаф Флэт Уайт</h1>
-        <p class="products-slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
-          то, что нужно для расслабления после тяжёлого рабочего дня</p>
-        <div class="products-slider__order-container">
-          <p class="products-slider__old-price">295₽</p>
-          <p class="products-slider__new-price">225₽</p>
-          <button class="products-slider__button">Заказать</button>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide first-slide">
+            <img class="products-slider__preview" src="img/flat_white_mobile.png" alt="Декаф Флэт Уайт" loading="lazy">
+            <p class="products-slider__new">Новинка!</p>
+                <h1 class="products-slider__product-name">Декаф Флэт Уайт</h1>
+                <p class="products-slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
+                  то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                  <div class="products-slider__order-container">
+                  <p class="products-slider__old-price">295₽</p>
+                  <p class="products-slider__new-price">225₽</p>
+                  <button class="products-slider__button">Заказать</button>
+                </div>
+          </div>
+          <div class="swiper-slide second-slide">
+            <img class="products-slider__preview" src="img/lavender_mobile.png" alt="Лавандовый Латте" loading="lazy">
+            <p class="products-slider__new">Новинка!</p>
+                <h1 class="products-slider__product-name">Лавандовый Латте</h1>
+                <p class="products-slider__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                  <div class="products-slider__order-container">
+                  <p class="products-slider__old-price">295₽</p>
+                  <p class="products-slider__new-price">225₽</p>
+                  <button class="products-slider__button">Заказать</button>
+                </div>
+          </div>
+          <div class="swiper-slide third-slide">
+            <img class="products-slider__preview" src="img/triple_mobile.png" alt="Лавандовый Латте" loading="lazy">
+            <p class="products-slider__new">Новинка!</p>
+                <h1 class="products-slider__product-name">Тройной Эспрессо</h1>
+                <p class="products-slider__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <div class="products-slider__order-container">
+                  <p class="products-slider__old-price">295₽</p>
+                  <p class="products-slider__new-price">225₽</p>
+                  <button class="products-slider__button">Заказать</button>
+                </div>
+          </div>
+          ...
         </div>
-      </section>
+
+        <div class="swiper-pagination"></div>
+
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
       <section class="advantages">
         <p class="advantages__title-text">Приемущества</p>
         <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
@@ -374,9 +413,10 @@
         <svg class="footer__logo logo-short-footer" width="100px" height="60px">
               <use href="#logo-short"></use>
             </svg>
-            <svg class="header__item logo-full" width="170px" height="36px">
+            <svg class="footer__logo footer-logo-full" width="170px" height="36px">
               <use href="#logo-full"></use>
             </svg>
+            <div class="footer__social-logos-container">
             <svg class="footer__logo" width="22px" height="22px">
               <use href="#vk"></use>
             </svg>
@@ -386,6 +426,7 @@
             <svg class="footer__logo" width="22px" height="22px">
               <use href="#ok"></use>
             </svg>
+          </div>
       </div>
       <section class="footer__links">
         <div class="footer__links-container">
@@ -398,14 +439,14 @@
       <div class="footer__links-container">
         <h5 class="footer__links-title">Медиа</h5>
         <p class="footer__links-item">Блог</p>
-        <p class="footer__links-item">Информация дял сми</p>
+        <p class="footer__links-item">Информация для сми</p>
         <p class="footer__links-item">Правовая информация</p>
       </div>
       <div class="footer__contacts">
         <div class="footer__links-container">
         <h5 class="footer__contacts-title">Контакты</h5>
         <div class="footer__contacts-container">
-        <svg class="footer__contacts-logo" width="13px" height="16px">
+        <svg class="footer__contacts-logo" width="23px" height="16px">
               <use href="#adress"></use>
             </svg>
         <p class="footer__contacts-text">Санкт-Петербург, набережная реки Карповки, дом 5</p>
@@ -421,7 +462,8 @@
       </section>
     </footer>
   </div>
-  <script src="./js/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"  type="module"></script>
 </body>
 
 </html>

@@ -1,8 +1,10 @@
 .advantages{
   text-align: center;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 200px;
+  @media (min-width: @mobile-width) {
+    margin-top: 50px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 
   &__text {
@@ -10,6 +12,11 @@
     @media (min-width: @tablet-width) {
     margin: 0;
     text-align: start;
+    }
+    @media (min-width: @desktop-width) {
+      font-size: 18px;
+      display: block;
+      text-align: center;
     }
   }
 
@@ -22,12 +29,20 @@
       grid-template-columns: 370px 356px;
       column-gap: 5px;
     }
+    @media (min-width: @desktop-width) {
+      display: flex;
+    }
   }
   &__item{
     list-style-type: none;
     @media (min-width: @tablet-width) {
       display: flex;
       align-items: center;
+    }
+    @media (min-width: @desktop-width) {
+      display: block;
+      text-align: center;
+      padding: 0;
     }
   }
 
@@ -36,6 +51,11 @@
       display: flex;
       flex-wrap: wrap;
       padding-left: 20px;
+    }
+    @media (min-width: @desktop-width) {
+      display: block;
+      text-align: center;
+      padding: 0;
     }
   }
 }

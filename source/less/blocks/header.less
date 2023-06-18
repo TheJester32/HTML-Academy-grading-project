@@ -1,6 +1,7 @@
 .header {
   margin: 0;
   width: 100%;
+  position: relative;
 
   @media (min-width: @mobile-width) {
     margin-bottom: 20px;
@@ -12,7 +13,8 @@
     flex-direction: row-reverse;
   }
 
-  &__item{
+
+  &__item {
     @media (min-width: @mobile-width) {
       padding: 0;
       margin: 0;
@@ -32,27 +34,64 @@
     margin-left: 10px;
     margin-right: 110px;
   }
+
   @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
     display: none;
   }
 
 }
 
-.logo-short{
+.logo-short {
   @media (min-width: @mobile-width) {
     display: none;
   }
+
   @media (min-width: @tablet-width) {
     display: block;
     margin-top: 20px;
-    margin-right: 80px;
+    margin-right: 110px;
+    position: absolute;
+    right: 575px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
-.toggle{
+.logo-full {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: 15px;
+    position: absolute;
+    right: 1030px;
+  }
+}
+
+.toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.account:hover {
+  cursor: pointer;
+  fill: #916ff5;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(1.2);
 }
 
 .cart {
@@ -60,3 +99,17 @@
     margin-right: 20px;
   }
 }
+
+.cart:hover {
+  cursor: pointer;
+  fill: #916ff5;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(1.2);
+}
+
+// .cart::before{
+//   @media (min-width: @desktop-width) {
+//     content: 'Корзина';
+//   }
+// }

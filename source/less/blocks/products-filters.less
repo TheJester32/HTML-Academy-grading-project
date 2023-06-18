@@ -4,6 +4,10 @@
       display: grid;
       grid-template-columns: 250px 250px 250px;
     }
+    @media (min-width: @desktop-width) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__milk-container{
