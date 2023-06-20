@@ -1,4 +1,5 @@
 .footer{
+  position: relative;
   @media (min-width: @mobile-width) {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -9,7 +10,46 @@
     grid-template-columns: 320px 300px 300px 300px;
   }
 
+  &__copyright{
+    text-decoration: none;
+  }
+
+  &__academy{
+    color: #E5E6E8;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 50px;
+    @media (min-width: @tablet-width) {
+      margin-left: 250px;
+    }
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      top: 180px;
+      right: 520px;
+    }
+  }
+
+  &__icon{
+    fill: #E5E6E8;
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      top: 182px;
+      right: 500px;
+    }
+  }
+
+  &__academy:hover{
+    color: #7859CF;
+  }
+
+  &__icon:hover{
+    fill: #7859CF;
+  }
+
   &__links-title{
+    font-weight: 700;
+    line-height: 20px;
+    color: #7859CF;
     margin: 0;
     @media (min-width: @tablet-width) {
       margin-top: 30px;
@@ -20,6 +60,9 @@
   }
 
   &__contacts-title{
+    font-weight: 700;
+    line-height: 20px;
+    color: #7859CF;
     @media (min-width: @desktop-width) {
       margin-top: 0;
     }
@@ -32,16 +75,32 @@
     @media (min-width: @tablet-width) {
       display: grid;
       grid-template-columns: 256px 256px 220px;
-      padding-left: 0;
+      padding-left: 10px;
     }
     @media (min-width: @desktop-width) {
       grid-template-columns: 256px 256px 290px;
     }
   }
+
+  &__links-item{
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__links-item:hover{
+    color: #7859CF;
+  }
+
   &__logos-container {
     @media (min-width: @mobile-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  @media (min-width: @tablet-width) {
+    margin-left: 10px;
   }
   @media (min-width: @desktop-width) {
     display: flex;
@@ -64,11 +123,16 @@
 }
 
 &__social-logos-container{
+  margin-top: 15px;
+  @media (min-width: @tablet-width) {
+    margin-top: 0px;
+  }
   @media (min-width: @desktop-width) {
+  margin-top: 55px;
   display: flex;
   justify-content: space-between;
   margin-right: 150px;
-  margin-left: 0;
+  margin-left: 5px;
 }
 }
 
@@ -80,6 +144,8 @@
 }
 
 &__contacts-text{
+  text-decoration: none;
+  color: #222;
   @media (min-width: @mobile-width) {
     margin: 0;
     padding-left: 10px;
@@ -103,6 +169,7 @@
     display: block;
     margin-right: 450px;
     margin-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
